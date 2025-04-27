@@ -1,0 +1,230 @@
+/* App.css */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e9eff1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Add button */
+.add-button {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each task item */
+.task-item {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.task-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Task Text Details */
+.task-item div h3 {
+  margin: 0 0 5px;
+  color: #222;
+}
+
+.task-item div p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Delete Button */
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ff5c5c;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.delete-button:hover {
+  color: #ff1c1c;
+  transform: scale(1.2);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+textarea.input {
+  resize: none;
+}
+
+.add-button {
+  padding: 12px;
+  background: linear-gradient(90deg, #4caf50, #45a049);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.add-button:hover {
+  background: linear-gradient(90deg, #45a049, #4caf50);
+  transform: scale(1.05);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.task-item div {
+  flex-grow: 1;
+}
+
+.task-item h3 {
+  margin: 0 0 8px 0;
+  color: #222;
+}
+
+.task-item p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.delete-button:hover {
+  transform: rotate(15deg) scale(1.3);
+}
+
+.priority-high {
+  color: red;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.priority-low {
+  color: green;
+  font-weight: bold;
+}
+/* Navbar styles */
+
+.navbar {
+  background-color: #4caf50;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f0f0f0;
+}
